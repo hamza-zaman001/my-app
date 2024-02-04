@@ -1,5 +1,7 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import { Cards, Footer, Header } from "./components";
+import Header from "./components/Header";
+import Cards from "./components/Cards";
+import Footer from "./components/Footer";
 
 export default function Document() {
   return (

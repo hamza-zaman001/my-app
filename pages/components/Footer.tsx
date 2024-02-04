@@ -1,4 +1,5 @@
 // components/Footer.tsx
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faYoutube, faFacebookF } from '@fortawesome/free-brands-svg-icons';
 
@@ -84,7 +85,13 @@ const Footer = () => {
         {/* Footer */}
         <div className="flex flex-wrap items-center justify-between border-t border-gray-300 mt-8 pt-8">
           <div className="flex items-center">
-            <img src="/logo-footer.png" alt="Similar Watch" className='w-[190px] mr-4'/>
+          <Image
+            src="/logo-footer.png"
+            alt="Similar Watch"
+            width={190}
+            height={0}
+            className="mr-4"
+          />          
           <div className="flex space-x-4 ml-4">
             <a href="#" className="text-sm hover:scale-105 duration-300 hover:border-b-[1px]">Privacy Policy</a>
             <a href="#" className="text-sm hover:scale-105 duration-300 hover:border-b-[1px]">Terms and conditions</a>
@@ -95,7 +102,7 @@ const Footer = () => {
           </div>
           </div>
           <div>
-            <img src="/moon.png" alt="moon" className='w-[60px]'/>
+            <Image src="/moon.png" alt="moon" width={190}  height={1} className='w-[60px]'/>
           </div>
         </div>
       </div>
